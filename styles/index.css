@@ -1,0 +1,106 @@
+/* navbar */
+.navbar-brand{
+    width:500px;
+}
+#logocontainer{
+    width: 55vw;
+}
+
+.logoimg{
+    width:240px; 
+    height:"auto";
+}
+
+
+.navbar-nav .nav-link{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .navbar-nav .nav-link:hover{
+color: #ff9933;  
+}
+button {
+    background-color: white; /* Set background color */
+    border: color 1px solid white;     /* Set border color */
+  }
+
+
+
+
+
+
+
+  /* navbarend */
+
+
+/* Homepagestart */
+
+.homepage{
+    width: 100vw;
+    height: auto;
+    position: relative;
+   
+}
+
+.backgroundimg{
+    width: 100%;
+    height: auto; 
+    filter: brightness(60%); 
+  
+    position: relative;   
+}
+
+.bgimg {
+    width: 100vw;
+    position: relative;
+    z-index: -1; /* Places the background image below other elements */
+}
+
+.mainimg {
+    position: absolute; /* Absolute positioning to place it on top */
+    top: 50%; /* Adjust to desired vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centers the image perfectly */
+    z-index: 1; /* Ensures the tagline is above the background */
+}
+
+
+
+/* Homepage end */
+
+
+@media(max-width:800px){
+   
+   .navbar
+   {
+    width: 165vh;;
+   }
+    .navbar-brand{
+        width:100vh;
+        height: 25vh;
+        
+    }
+    #logocontainer{
+        width:80%;
+    margin-left: -20px;
+    }
+
+    .logoimg{
+        width:80vh; 
+        height:auto;
+    }
+    .homepage{
+        width: 100vh;
+        border: 2px solid black;
+    }
+    .backgroundimg{
+        filter: brightness(60%); 
+    }
+    .bgimg{
+        height: 85vh;
+        width: 160vh;
+        transform: translate(-30vh,0);
+    }
+
+    
+}
